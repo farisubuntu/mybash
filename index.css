@@ -219,3 +219,14 @@ p {
    margin-top: 40px;
  }
 }
+/* my styles */
+#open-content{
+  display: none;
+}
+iframe{
+  background-color: white;
+  min-width: 100%;
+  min-height: 100%;
+
+
+}
