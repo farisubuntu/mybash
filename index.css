@@ -32,14 +32,12 @@ body {
 }
 /* ********************************** */
 
-
-
 .card-column{
   
   padding:2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+/*  justify-content: center;*/
   /* align-items: center; */
   background-color: white;
   row-gap: 3rem;
@@ -72,6 +70,9 @@ body {
 }
 .card-color-3{
 background-color: rgb(1,22,1);
+}
+.card-color-4{
+  background-color:#A38BE1;
 }
 @media screen and (max-width:500px){
   .container{
