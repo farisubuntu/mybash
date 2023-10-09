@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!--This file has been created with freeplane2html.xsl--><head><title>2.1 Creating and running a script</title><link rel="stylesheet" href="2_1_Creating%20and%20running%20a%20script.html_files/freeplane2html.css" type="text/css" /><meta name="generator" content="Freeplane-XSL Stylesheet (see: http://freeplane-xsl.dev.slash-me.net/ for details)" /><script type="text/javascript" src="2_1_Creating%20and%20running%20a%20script.html_files/freeplane2html.js"> 
+	</script><script type="text/javascript"><!--
+          
+               function toggle(id)
+               {
+                   div_el = document.getElementById(id);
+                   img_el = document.getElementById('img'+id);
+                   if (div_el.style.display != 'none')
+                   {
+          
+
+                      div_el.style.display='none';
+                      img_el.src = '2_1_Creating%20and%20running%20a%20script.html_files/show.png';
+          
+                   }
+                   else
+                   {
+          
+                      div_el.style.display='block';
+                      img_el.src = '2_1_Creating%20and%20running%20a%20script.html_files/hide.png';
+          
+                   };
+               };
+          
+          --></script></head><body><h1>2.1 Creating and running a script</h1><div style="width:96%;  padding:2%;  margin-bottom:10px;  border: 0px;  text-align:center;  vertical-align:center;"><img src="2_1_Creating%20and%20running%20a%20script.html_files/image.png" style="margin-bottom:10px; &#9;border: 0px; &#9;text-align:center; &#9;vertical-align:center;" alt="Imagemap" usemap="#fm_imagemap" /></div><map name="fm_imagemap" id="fm_imagemap"><area shape="rect" href="#FMID_701787191FM" alt="2.1 Creating and running a script" title="2.1 Creating and running a script" coords="514,200,795,295" />
+<area shape="rect" href="#FMID_1296493174FM" alt="Script uses examples:" title="Script uses examples:" coords="810,221,989,243" />
+<area shape="rect" href="#FMID_116487988FM" alt="commands can be shell functions, shell b ..." title="commands can be shell functions, shell b ..." coords="214,38,499,102" />
+<area shape="rect" href="#FMID_640629490FM" alt="Hints" title="Hints" coords="755,381,825,409" />
+<area shape="rect" href="#FMID_1080025243FM" alt=" a good idea to create a directory ~/scr ..." title=" a good idea to create a directory ~/scr ..." coords="214,105,499,148" />
+<area shape="rect" href="#FMID_726881106FM" alt="Executing script" title="Executing script" coords="324,347,479,375" />
+<area shape="rect" href="#FMID_1171666766FM" alt="To execute the script in the current she ..." title="To execute the script in the current she ..." coords="38,208,323,315" />
+<area shape="rect" href="#FMID_1977482813FM" alt="execute in 'subshell': (need a chmod +x  ..." title="execute in 'subshell': (need a chmod +x  ..." coords="287,434,572,541" />
+</map>
+
+<div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N65543&quot;)" id="imgN65543" /><a id="FMID_701787191FM" /><div class="nodecontent" style="color:#000000;font-size:192%;font-weight:bold;">2.1 Creating and running a script</div><div class="content" id="N65543"><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N66441&quot;)" id="imgN66441" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/help.png" alt="help" /> <a id="FMID_1296493174FM" /><div class="nodecontent" style="color:#000000;font-size:125%;font-weight:bold;">Script uses examples:</div><div class="content" id="N66441"><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_1986232106FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <p>
+      automate tasks using <i>cron</i> utility
+    </p>
+  </div></div><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_670442187FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">system boot/shutdown procedure</div></div></div></div><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/leaf.png" class="hideshow" alt="leaf" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/idea.png" alt="idea" /> <a id="FMID_116487988FM" /><div class="nodecontent" style="color:#000000;font-size:125%;font-weight:bold;">commands can be shell functions, shell built-ins, UNIX commands and other scripts.</div></div><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N66616&quot;)" id="imgN66616" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/messagebox_warning.png" alt="messagebox_warning" /> <a id="FMID_640629490FM" /><div class="nodecontent" style="color:#000000;font-size:158%;font-weight:bold;">Hints</div><div class="content" id="N66616"><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N66660&quot;)" id="imgN66660" /><a id="FMID_1506253437FM" /><div class="nodecontent" style="color:#ff3333;font-size:83%;">
+    <span style="color: rgb(255, 255, 255); font-family: Verdana, sans-serif; font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; background-color: rgb(0, 0, 0); display: inline !important; float: none"><font color="rgb(255, 255, 255)" face="Verdana, sans-serif" size="18px">Make sure that your script name does not conflict with existing commands.</font></span>
+  </div><div class="content" id="N66660"><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/leaf.png" class="hideshow" alt="leaf" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/launch.png" alt="launch" /> <a id="FMID_1744569470FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <p>
+      <b><i>which -a script_name</i></b>
+    </p>
+  </div></div><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/leaf.png" class="hideshow" alt="leaf" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/launch.png" alt="launch" /> <a id="FMID_1816860983FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <p>
+      <b><i>whereis script_name</i></b>
+    </p>
+  </div></div><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/leaf.png" class="hideshow" alt="leaf" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/launch.png" alt="launch" /> <a id="FMID_437980019FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <p>
+      <b><i>locate script_name</i></b>
+    </p>
+  </div></div></div></div></div></div><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N66899&quot;)" id="imgN66899" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/idea.png" alt="idea" /> <a id="FMID_1080025243FM" /><div class="nodecontent" style="color:#000000;font-size:125%;font-weight:bold;"> a good idea to create a directory ~/scripts</div><div class="content" id="N66899"><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/leaf.png" class="hideshow" alt="leaf" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/launch.png" alt="launch" /> <a id="FMID_28514949FM" /><div class="nodecontent" style="color:#000000;font-size:75%;">
+    <p>
+      <i><b>export PATH="$PATH:~/scripts"</b></i>
+    </p>
+  </div></div></div></div><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N67042&quot;)" id="imgN67042" /><a id="FMID_726881106FM" /><div class="nodecontent" style="color:#00b439;font-size:158%;">
+    <p>
+      <b>Executing script</b>
+    </p>
+  </div><div class="content" id="N67042"><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N67099&quot;)" id="imgN67099" /><a id="FMID_1171666766FM" /><div class="nodecontent" style="color:#000000;font-size:125%;">
+    <p>
+      <b>To execute the script in the current shell context <i>( so any changes made to your environment will present after finish the script</i>) without starting a new '<i>subshell. </i></b>
+    </p>
+  </div><div class="content" id="N67099"><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_208742017FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <p>
+      <b><i>No need to +x permission</i> </b>
+    </p>
+    <p>
+      $ <b>source script.sh</b>
+    </p>
+  </div></div></div></div><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N67223&quot;)" id="imgN67223" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/launch.png" alt="launch" /> <a id="FMID_1977482813FM" /><div class="nodecontent" style="color:#000000;font-size:125%;">
+    <p>
+      <b><u>execute in 'subshell':  </u><i>(need a chmod +x script.sh)</i></b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b><i>$ bash script.sh </i></b>
+    </p>
+    <p>
+      <b>$ ./script.sh</b>
+    </p>
+  </div><div class="content" id="N67223"><div class="node"><img src="2_1_Creating%20and%20running%20a%20script.html_files/leaf.png" class="hideshow" alt="leaf" /><img src="2_1_Creating%20and%20running%20a%20script.html_files/icons/messagebox_warning.png" alt="messagebox_warning" /> <a id="FMID_1346230601FM" /><div class="nodecontent" style="color:#000000;font-size:100%;">
+    <p>
+      <b>when execute the script in a <i><u>subshell</u></i></b> ,<b> The variables, functions and aliases created in this subshell are only known to the particular bash session of that subshell. When that shell exits and the parent regains control, everything is cleaned up and all changes to the state of the shell made by the script, are forgotten.</b>
+    </p>
+  </div></div></div></div></div></div></div></div>
+</body></html>

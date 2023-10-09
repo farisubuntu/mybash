@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!--This file has been created with freeplane2html.xsl--><head><title>1.5. Developing good scripts</title><link rel="stylesheet" href="1_5_Developing%20good%20scripts.html_files/freeplane2html.css" type="text/css" /><meta name="generator" content="Freeplane-XSL Stylesheet (see: http://freeplane-xsl.dev.slash-me.net/ for details)" /><script type="text/javascript" src="1_5_Developing%20good%20scripts.html_files/freeplane2html.js"> 
+	</script><script type="text/javascript"><!--
+          
+               function toggle(id)
+               {
+                   div_el = document.getElementById(id);
+                   img_el = document.getElementById('img'+id);
+                   if (div_el.style.display != 'none')
+                   {
+          
+
+                      div_el.style.display='none';
+                      img_el.src = '1_5_Developing%20good%20scripts.html_files/show.png';
+          
+                   }
+                   else
+                   {
+          
+                      div_el.style.display='block';
+                      img_el.src = '1_5_Developing%20good%20scripts.html_files/hide.png';
+          
+                   };
+               };
+          
+          --></script></head><body><h1>1.5. Developing good scripts</h1><div style="width:96%;  padding:2%;  margin-bottom:10px;  border: 0px;  text-align:center;  vertical-align:center;"><img src="1_5_Developing%20good%20scripts.html_files/image.png" style="margin-bottom:10px; &#9;border: 0px; &#9;text-align:center; &#9;vertical-align:center;" alt="Imagemap" usemap="#fm_imagemap" /></div><map name="fm_imagemap" id="fm_imagemap"><area shape="rect" href="#FMID_1562563554FM" alt="1.5. Developing good scripts" title="1.5. Developing good scripts" coords="595,398,969,476" />
+<area shape="rect" href="#FMID_75846589FM" alt=" Properties of good scripts" title=" Properties of good scripts" coords="905,201,1140,228" />
+<area shape="rect" href="#FMID_771373128FM" alt="*
+A script should run without errors." title="*
+A script should run without errors." coords="1159,50,1525,98" />
+<area shape="rect" href="#FMID_1998168127FM" alt="*
+It should perform the task for which i ..." title="*
+It should perform the task for which i ..." coords="1159,101,1537,176" />
+<area shape="rect" href="#FMID_147221501FM" alt="*
+Program logic is clearly defined and a ..." title="*
+Program logic is clearly defined and a ..." coords="1159,179,1537,250" />
+<area shape="rect" href="#FMID_1598185466FM" alt="*
+A script does not do unnecessary work." title="*
+A script does not do unnecessary work." coords="1159,253,1537,328" />
+<area shape="rect" href="#FMID_1828798030FM" alt="*
+Scripts should be reusable." title="*
+Scripts should be reusable." coords="1159,331,1457,379" />
+<area shape="rect" href="#FMID_929631577FM" alt="Structure Questions when starting a new  ..." title="Structure Questions when starting a new  ..." coords="447,308,825,363" />
+<area shape="rect" href="#FMID_1056648756FM" alt="*
+Will I be needing any information from ..." title="*
+Will I be needing any information from ..." coords="50,88,428,190" />
+<area shape="rect" href="#FMID_370031326FM" alt="*
+How will I store that information?" title="*
+How will I store that information?" coords="71,193,428,241" />
+<area shape="rect" href="#FMID_1816252578FM" alt="*
+Are there any files that need to be cr ..." title="*
+Are there any files that need to be cr ..." coords="50,244,428,346" />
+<area shape="rect" href="#FMID_125150537FM" alt="*
+What commands will I use? When using t ..." title="*
+What commands will I use? When using t ..." coords="50,349,428,505" />
+<area shape="rect" href="#FMID_395968541FM" alt="*
+Does the user need any notifications?  ..." title="*
+Does the user need any notifications?  ..." coords="50,508,428,583" />
+<area shape="rect" href="#FMID_1549385040FM" alt="Terminology" title="Terminology" coords="615,628,702,648" />
+<area shape="rect" href="#FMID_540144321FM" alt="Command control" title="Command control" coords="721,492,850,527" />
+<area shape="rect" href="#FMID_343368597FM" alt="Testing exit status of a command in orde ..." title="Testing exit status of a command in orde ..." coords="869,481,1247,534" />
+<area shape="rect" href="#FMID_1224645518FM" alt="Conditional branch" title="Conditional branch" coords="721,548,855,583" />
+<area shape="rect" href="#FMID_446276258FM" alt="Logical point in the program when a cond ..." title="Logical point in the program when a cond ..." coords="874,537,1252,590" />
+<area shape="rect" href="#FMID_488674639FM" alt="Logic flow" title="Logic flow" coords="721,613,801,648" />
+<area shape="rect" href="#FMID_1844031703FM" alt="The overall design of the program. Deter ..." title="The overall design of the program. Deter ..." coords="820,593,1198,664" />
+<area shape="rect" href="#FMID_567574886FM" alt="Loop" title="Loop" coords="721,669,772,704" />
+<area shape="rect" href="#FMID_1146469628FM" alt="Part of the program that is performed ze ..." title="Part of the program that is performed ze ..." coords="791,667,1156,702" />
+<area shape="rect" href="#FMID_433431577FM" alt="User input" title="User input" coords="721,727,804,762" />
+<area shape="rect" href="#FMID_1465100109FM" alt="Information provided by an external sour ..." title="Information provided by an external sour ..." coords="823,707,1201,778" />
+</map>
+
+<div class="node"><img src="1_5_Developing%20good%20scripts.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N65543&quot;)" id="imgN65543" /><a id="FMID_1562563554FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">1.5. Developing good scripts</div><div class="note-and-attributes"><span class="note">
+    <p>
+      A number of methods can be used; one of the most common is working with lists. Itemizing the list of tasks involved in a program allows you to describe each process. Individual tasks can be referenced by their item number.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <a href="https://farisubuntu.github.io/mybash/beginner_guide/html/sect_01_05.html">see an example</a>
+    </p>
+  </span></div><div class="content" id="N65543"><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N66466&quot;)" id="imgN66466" /><a id="FMID_75846589FM" /><div class="nodecontent" style="color:#000000;font-size:117%;"> Properties of good scripts</div><div class="content" id="N66466"><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_771373128FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul>
+      <li http-equiv="content-type" content="text/html; charset=utf-8">
+        <p>
+          A script should run without errors.
+        </p>
+      </li>
+    </ul>
+  </div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_1998168127FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul>
+      <li>
+        <p>
+          It should perform the task for which it is intended.
+        </p>
+      </li>
+    </ul>
+  </div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_147221501FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul>
+      <li>
+        <p>
+          Program logic is clearly defined and apparent - واضح
+        </p>
+      </li>
+    </ul>
+  </div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_1598185466FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul>
+      <li>
+        <p>
+          A script does not do unnecessary work.
+        </p>
+      </li>
+    </ul>
+  </div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_1828798030FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul>
+      <li>
+        <p>
+          Scripts should be reusable.
+        </p>
+      </li>
+    </ul>
+  </div></div></div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N66792&quot;)" id="imgN66792" /><a id="FMID_929631577FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <p>
+      <b>Structure</b> Questions when starting a new script:
+    </p>
+  </div><div class="content" id="N66792"><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_1056648756FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul http-equiv="content-type" content="text/html; charset=utf-8">
+      <li>
+        <p>
+          Will I be needing any information from the user or from the user's environment?
+        </p>
+      </li>
+    </ul>
+  </div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_370031326FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul http-equiv="content-type" content="text/html; charset=utf-8">
+      <li>
+        <p>
+          How will I store that information?
+        </p>
+      </li>
+    </ul>
+  </div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_1816252578FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul http-equiv="content-type" content="text/html; charset=utf-8">
+      <li>
+        <p>
+          Are there any files that need to be created? Where and with which permissions and ownerships?
+        </p>
+      </li>
+    </ul>
+  </div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_125150537FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul http-equiv="content-type" content="text/html; charset=utf-8">
+      <li>
+        <p>
+          What commands will I use? When using the script on different systems, do all these systems have these commands in the required versions?
+        </p>
+      </li>
+    </ul>
+  </div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_395968541FM" /><div class="nodecontent" style="color:#000000;font-size:117%;">
+    <ul http-equiv="content-type" content="text/html; charset=utf-8">
+      <li>
+        <p>
+          Does the user need any notifications? When and why?
+        </p>
+      </li>
+    </ul>
+  </div></div></div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N67144&quot;)" id="imgN67144" /><a id="FMID_1549385040FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <p>
+      <b>Terminology</b>
+    </p>
+  </div><div class="content" id="N67144"><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N67200&quot;)" id="imgN67200" /><a id="FMID_540144321FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          Command control
+        </td>
+      </tr>
+    </table>
+  </div><div class="content" id="N67200"><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_343368597FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          Testing exit status of a command in order to determine whether a portion of the program should be executed.
+        </td>
+      </tr>
+    </table>
+  </div></div></div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N67326&quot;)" id="imgN67326" /><a id="FMID_1224645518FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          Conditional branch
+        </td>
+      </tr>
+    </table>
+  </div><div class="content" id="N67326"><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_446276258FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          Logical point in the program when a condition determines what happens next.
+        </td>
+      </tr>
+    </table>
+  </div></div></div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N67452&quot;)" id="imgN67452" /><a id="FMID_488674639FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          Logic flow
+        </td>
+      </tr>
+    </table>
+  </div><div class="content" id="N67452"><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_1844031703FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          The overall design of the program. Determines logical sequence of tasks so that the result is successful and controlled.
+        </td>
+      </tr>
+    </table>
+  </div></div></div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N67578&quot;)" id="imgN67578" /><a id="FMID_567574886FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          Loop
+        </td>
+      </tr>
+    </table>
+  </div><div class="content" id="N67578"><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_1146469628FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          Part of the program that is performed zero or more times.
+        </td>
+      </tr>
+    </table>
+  </div></div></div></div><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/hide.png" class="hideshow" alt="hide" onClick="toggle(&quot;N67704&quot;)" id="imgN67704" /><a id="FMID_433431577FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          User input
+        </td>
+      </tr>
+    </table>
+  </div><div class="content" id="N67704"><div class="node"><img src="1_5_Developing%20good%20scripts.html_files/leaf.png" class="hideshow" alt="leaf" /><a id="FMID_1465100109FM" /><div class="nodecontent" style="color:#000000;font-size:83%;">
+    <table http-equiv="content-type" content="text/html; charset=utf-8" border="1" class="CALSTABLE">
+      <tr>
+        <td align="left" valign="middle">
+          Information provided by an external source while the program is running, can be stored and recalled when needed.
+        </td>
+      </tr>
+    </table>
+  </div></div></div></div></div></div></div></div>
+</body></html>

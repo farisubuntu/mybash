@@ -1,0 +1,6 @@
+<filter_conditions>
+    <icon_contained_condition ICON="idea"/>
+    <icon_contained_condition ICON="help"/>
+    <icon_contained_condition ICON="launch"/>
+    <icon_contained_condition ICON="messagebox_warning"/>
+</filter_conditions>
