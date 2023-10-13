@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--This file has been created with freeplane2html.xsl-->
+
+<head>
+  <title>4. Regular Expressions</title>
+  <link rel="stylesheet" href="4_1_Regular%20Expressions.html_files/freeplane2html.css" type="text/css" />
+  <meta name="generator" content="Freeplane-XSL Stylesheet (see: http://freeplane-xsl.dev.slash-me.net/ for details)" />
+  <script type="text/javascript" src="4_1_Regular%20Expressions.html_files/freeplane2html.js"> 
+  </script>
+  <script type="text/javascript"><!-
+ 
+function toggle(id)
+{
+div_el = document.getElementById(id);
+img_el = document.getElementById('img'+id);
+if (div_el.style.display != 'none')
+{
+ 
+
+div_el.style.display='none';
+img_el.src = '4_1_Regular%20Expressions.html_files/show.png';
+ 
+}
+else
+{
+ 
+div_el.style.display='block';
+img_el.src = '4_1_Regular%20Expressions.html_files/hide.png';
+ 
+};
+};
+ 
+-></script>
+</head>
+
+<body>
+  <h1>4. Regular Expressions</h1>
+  <div style="width:96%;  padding:2%;  margin-bottom:10px;  border: 0px;  text-align:center;  vertical-align:center;">
+    <img src="4_1_Regular%20Expressions.html_files/image.png"
+      style="margin-bottom:10px; &#9;border: 0px; &#9;text-align:center; &#9;vertical-align:center;" alt="Imagemap"
+      usemap="#fm_imagemap" /></div><map name="fm_imagemap" id="fm_imagemap"><area shape="rect" href="#FMID_493211461FM"
+      alt="4. Regular Expressions" title="4. Regular Expressions" coords="833,601,1025,793" />
+    <area shape="rect" href="#FMID_62451043FM" alt="- A regular expression is a pattern that ..."
+      title="- A regular expression is a pattern that ..." coords="687,38,1090,109" />
+    <area shape="rect" href="#FMID_1720603091FM" alt="NOTES" title="NOTES" coords="1040,629,1161,655" />
+    <area shape="rect" href="#FMID_279204513FM" alt="Two regular expressions may be concatena ..."
+      title="Two regular expressions may be concatena ..." coords="1194,423,1647,508" />
+    <area shape="rect" href="#FMID_761600431FM" alt="Two regular expressions may be joined by ..."
+      title="Two regular expressions may be joined by ..." coords="1194,512,1647,577" />
+    <area shape="rect" href="#FMID_1740808549FM" alt="Repetition takes precedence over concate ..."
+      title="Repetition takes precedence over concate ..." coords="1194,577,1647,629" />
+    <area shape="rect" href="#FMID_769229836FM" alt="In basic regular expressions the metacha ..."
+      title="In basic regular expressions the metacha ..." coords="1195,629,1648,694" />
+    <area shape="rect" href="#FMID_1769657325FM" alt="Check wether commands using regular expr ..."
+      title="Check wether commands using regular expr ..." coords="1191,696,1644,740" />
+    <area shape="rect" href="#FMID_31172513FM" alt="Metacharacters" title="Metacharacters" coords="1040,782,1175,808" />
+    <area shape="rect" href="#FMID_1663621727FM" alt="Regular expression operators" title="Regular expression operators"
+      coords="1193,740,1646,969" />
+    <area shape="rect" href="#FMID_1831091726FM" alt="Basic Commands" title="Basic Commands" coords="662,779,806,805" />
+    <area shape="rect" href="#FMID_95973369FM" alt="cat" title="cat" coords="38,435,599,752" />
+    <area shape="rect" href="#FMID_1401237480FM" alt="grep: Search for PATTERNS in each FILE
+U ..." title="grep: Search for PATTERNS in each FILE
+U ..." coords="63,766,600,1312" />
+  </map>
+
+  <div class="node"><img src="4_1_Regular%20Expressions.html_files/hide.png" class="hideshow" alt="hide"
+      onClick="toggle(&quot;N65543&quot;)" id="imgN65543" /><a id="FMID_493211461FM" />
+    <div class="nodecontent" style="color:#ffffff;background-color:#0033cc;font-size:250%;font-style:italic;">4. Regular
+      Expressions</div>
+    <div class="content" id="N65543">
+      <div class="node"><img src="4_1_Regular%20Expressions.html_files/leaf.png" class="hideshow" alt="leaf" /><a
+          id="FMID_62451043FM" />
+        <div class="nodecontent"
+          style="color:#ffff33;background-color:#3333ff;font-size:117%;font-weight:bold;font-style:italic;">- A regular
+          expression is a pattern that describes a set of strings.<br />- A regular expression may be followed by one of
+          several repetition operators (metacharacters)</div>
+      </div>
+      <div class="node"><img src="4_1_Regular%20Expressions.html_files/hide.png" class="hideshow" alt="hide"
+          onClick="toggle(&quot;N66080&quot;)" id="imgN66080" /><a id="FMID_1720603091FM" />
+        <div class="nodecontent" style="color:#ffffff;background-color:#990033;font-size:133%;font-weight:bold;">NOTES
+        </div>
+        <div class="content" id="N66080">
+          <div class="node"><img src="4_1_Regular%20Expressions.html_files/leaf.png" class="hideshow" alt="leaf" /><a
+              id="FMID_279204513FM" />
+            <div class="nodecontent" style="color:#ffffff;background-color:#660000;font-size:117%;font-weight:bold;">Two
+              regular expressions may be concatenated; the resulting regular expression matches any string formed by
+              concatenating two substrings that respectively match the concatenated subexpressions.</div>
+          </div>
+          <div class="node"><img src="4_1_Regular%20Expressions.html_files/leaf.png" class="hideshow" alt="leaf" /><a
+              id="FMID_761600431FM" />
+            <div class="nodecontent" style="color:#ffffff;background-color:#660000;font-size:117%;font-weight:bold;">
+              <p>
+                Two regular expressions may be joined by the <i>infix</i> operator "|"; the resulting regular expression
+                matches any string matching either subexpression.
+              </p>
+            </div>
+          </div>
+          <div class="node"><img src="4_1_Regular%20Expressions.html_files/leaf.png" class="hideshow" alt="leaf" /><img
+              src="4_1_Regular%20Expressions.html_files/icons/yes.png" alt="yes" /> <a id="FMID_1740808549FM" />
+            <div class="nodecontent" style="color:#cccc00;background-color:#660000;font-size:117%;font-weight:bold;">
+              <p>
+                <i><u>Repetition</u></i> takes precedence over <i><u>concatenation</u></i>, which in turn takes
+                precedence over <u>alternation</u>. A whole subexpression may be enclosed in parentheses to override
+                these precedence rules.
+              </p>
+            </div>
+          </div>
+          <div class="node"><img src="4_1_Regular%20Expressions.html_files/leaf.png" class="hideshow" alt="leaf" /><a
+              id="FMID_769229836FM" />
+            <div class="nodecontent" style="color:#ffffff;background-color:#660000;font-size:117%;font-weight:bold;">
+              <p>
+                In basic regular expressions the <i>metacharacters</i> "?", "+", "{", "|", "(", and ")" lose their
+                special meaning; instead use the backslashed versions "\?", "\+", "\{", "\|", "\(", and "\)".
+              </p>
+            </div>
+          </div>
+          <div class="node"><img src="4_1_Regular%20Expressions.html_files/leaf.png" class="hideshow" alt="leaf" /><a
+              id="FMID_1769657325FM" />
+            <div class="nodecontent" style="color:#ffffff;background-color:#660000;font-size:117%;font-weight:bold;">
+              Check wether commands using regular expressions support extended expressions..</div>
+          </div>
+        </div>
+      </div>
+      <div class="node"><img src="4_1_Regular%20Expressions.html_files/hide.png" class="hideshow" alt="hide"
+          onClick="toggle(&quot;N66400&quot;)" id="imgN66400" /><a id="FMID_31172513FM" />
+        <div class="nodecontent" style="color:#ffffff;background-color:#990033;font-size:133%;font-weight:bold;">
+          Metacharacters</div>
+        <div class="content" id="N66400">
+          <div class="node"><img src="4_1_Regular%20Expressions.html_files/leaf.png" class="hideshow" alt="leaf" /><a
+              id="FMID_1663621727FM" />
+            <div class="nodecontent" style="color:#000000;font-size:75%;font-weight:bold;">Regular expression operators
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="node"><img src="4_1_Regular%20Expressions.html_files/hide.png" class="hideshow" alt="hide"
+          onClick="toggle(&quot;N66487&quot;)" id="imgN66487" /><a id="FMID_1831091726FM" />
+        <div class="nodecontent" style="color:#ffffff;background-color:#990033;font-size:133%;font-weight:bold;">Basic
+          Commands</div>
+        <div class="content" id="N66487">
+          <div class="node"><img src="4_1_Regular%20Expressions.html_files/leaf.png" class="hideshow" alt="leaf" /><a
+              id="FMID_95973369FM" />
+            <div class="nodecontent" style="color:#ffffff;background-color:#000099;font-size:133%;font-style:italic;">
+              cat</div>
+          </div>
+          <div class="node"><img src="4_1_Regular%20Expressions.html_files/leaf.png" class="hideshow" alt="leaf" /><a
+              id="FMID_1401237480FM" />
+            <div class="nodecontent" style="color:#ffffff;background-color:#000099;font-size:133%;font-style:italic;">
+              grep: Search for PATTERNS in each FILE<br />Usage: grep [OPTION]... PATTERNS [FILE]...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
