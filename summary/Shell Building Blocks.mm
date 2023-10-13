@@ -12,9 +12,8 @@
     </h1>
   </body>
 </html>
-
 </richcontent>
-<hook NAME="MapStyle" zoom="0.425">
+<hook NAME="MapStyle" zoom="0.386">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -281,7 +280,7 @@
 <edge STYLE="bezier" COLOR="#ff0000"/>
 </node>
 </node>
-<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" FOLDED="true" ID="ID_1708155813" CREATED="1696707812629" MODIFIED="1696880567934" HGAP_QUANTITY="91.24999769777067 pt" VSHIFT_QUANTITY="-17.999999463558215 pt"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1708155813" CREATED="1696707812629" MODIFIED="1696880567934" HGAP_QUANTITY="91.24999769777067 pt" VSHIFT_QUANTITY="-17.999999463558215 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -303,7 +302,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node TEXT=" evaluation of the contents of $((expression)) sequences,  which are used to perform basic mathematical operations.&#xa;&#xa;The expression is treated as if it were within double quotes, but a double quote inside the parentheses is not treated specially." LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_134551539" CREATED="1696844887267" MODIFIED="1696879435756" COLOR="#ffffff" BACKGROUND_COLOR="#000066" BORDER_COLOR="#336600">
 <font NAME="Serif" SIZE="16"/>
@@ -321,7 +319,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -337,7 +334,6 @@
     </h2>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1420478473" CREATED="1696707812630" MODIFIED="1696882253320" HGAP_QUANTITY="80.74999801069505 pt" VSHIFT_QUANTITY="33.74999899417165 pt"><richcontent TYPE="NODE">
@@ -362,7 +358,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="once all of the previous operations are run, the shell splits the command up into &apos;words&apos;, which are the units of text that you can run loops over&#xa;&#xa;The &quot;IFS&quot; (Internal Field Separator) variable plays an important role in controlling how fields in a string are separated. IFS defaults to a space, tab, and newline character, which means that, by default, fields in a string are separated by any combination of these characters." LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_581694300" CREATED="1696844900451" MODIFIED="1696882120358" COLOR="#ffffff" BACKGROUND_COLOR="#000066" BORDER_COLOR="#336600" HGAP_QUANTITY="80.74999801069504 pt" VSHIFT_QUANTITY="40.49999879300598 pt">
 <font NAME="Serif" SIZE="16"/>
@@ -391,7 +386,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node TEXT=" The shell expands wildcards and special characters in pathnames, such as file*.txt into the set of files that are matched by the sequence.&#xa;&#xa;&gt; Bash scans each word for the characters &quot;*&quot;, &quot;?&quot;, and &quot;[&quot;. If one of these characters appears, then the word is regarded as a PATTERN, and replaced with an alphabetically sorted list of file names matching the pattern." LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_33955659" CREATED="1696844920779" MODIFIED="1696882490681" COLOR="#ffffff" BACKGROUND_COLOR="#000066" BORDER_COLOR="#336600">
 <font NAME="Serif" SIZE="16"/>
@@ -417,7 +411,7 @@
 </html>
 </richcontent>
 </node>
-<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" FOLDED="true" ID="ID_1106039496" CREATED="1696706610356" MODIFIED="1696880771326" HGAP_QUANTITY="62.74999854713684 pt" VSHIFT_QUANTITY="-15.74999953061343 pt"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1106039496" CREATED="1696706610356" MODIFIED="1696880771326" HGAP_QUANTITY="62.74999854713684 pt" VSHIFT_QUANTITY="-15.74999953061343 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
