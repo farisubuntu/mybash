@@ -13,7 +13,7 @@
   </body>
 </html>
 </richcontent>
-<hook NAME="MapStyle" zoom="0.386">
+<hook NAME="MapStyle" zoom="0.754">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -94,7 +94,7 @@
 <hook NAME="FreeNode"/>
 <node TEXT="See Chapter 11" ID="ID_741040252" CREATED="1696707508150" MODIFIED="1696707563390" LINK="https://farisubuntu.github.io/mybash/beginner_guide/html/chap_11.html"/>
 </node>
-<node LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1505522241" CREATED="1696706481279" MODIFIED="1696880779183" VGAP_QUANTITY="2.2 pt" HGAP_QUANTITY="-36.999998480081615 pt" VSHIFT_QUANTITY="-149.24999555200353 pt"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1505522241" CREATED="1696706481279" MODIFIED="1697911824210" VGAP_QUANTITY="2.2 pt" HGAP_QUANTITY="-36.999998480081615 pt" VSHIFT_QUANTITY="-149.24999555200353 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -127,7 +127,7 @@
 </html>
 </richcontent>
 </node>
-<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1143914666" CREATED="1696706610344" MODIFIED="1696847294928" LINK="https://farisubuntu.github.io/mybash/beginner_guide/html/chap_03.html" HGAP_QUANTITY="103.99999731779107 pt" VSHIFT_QUANTITY="109.49999673664578 pt"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1143914666" CREATED="1696706610344" MODIFIED="1697911819474" LINK="https://farisubuntu.github.io/mybash/beginner_guide/html/chap_03.html" HGAP_QUANTITY="163.99999552965178 pt" VSHIFT_QUANTITY="30.7499990835786 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -145,7 +145,7 @@
 </html>
 </richcontent>
 </node>
-<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_605923830" CREATED="1696706610346" MODIFIED="1696857674402" HGAP_QUANTITY="96.49999754130849 pt" VSHIFT_QUANTITY="184.4999945014717 pt"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_605923830" CREATED="1696706610346" MODIFIED="1697911824209" HGAP_QUANTITY="163.9999955296518 pt" VSHIFT_QUANTITY="24.74999926239255 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -162,8 +162,206 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="Looping Constructs" ID="ID_1481904106" CREATED="1697911882946" MODIFIED="1697912119475">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_1652961969" CREATED="1697911913793" MODIFIED="1697912006478" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#ff0000">until</font>&#160;test-commands; <font color="#ff0000">do</font>&#160;consequent-commands; <font color="#ff0000">done</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Hack" ITALIC="true"/>
 </node>
-<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1978773649" CREATED="1696706610353" MODIFIED="1696880779182" HGAP_QUANTITY="198.4999945014717 pt" VSHIFT_QUANTITY="-26.99999919533733 pt"><richcontent TYPE="NODE">
+<node TEXT="while test-commands; do consequent-commands; done" LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_755115743" CREATED="1697912009298" MODIFIED="1697912020223" STYLE="bubble">
+<font NAME="Hack" ITALIC="true"/>
+</node>
+<node TEXT="for name [ [in [words ...] ] ; ] do commands; done" LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_1758887162" CREATED="1697912027298" MODIFIED="1697912176783" STYLE="bubble">
+<font NAME="Hack" ITALIC="true"/>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_1703691156" CREATED="1697912051706" MODIFIED="1697912180960" HGAP_QUANTITY="53.74999881535774 pt" VSHIFT_QUANTITY="1.4999999552965164 pt" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Alternate form: </b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <i>for </i>(( expr1 ; expr2 ; expr3 )) ; <i>do</i>&#160;commands ; <i>done</i>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Hack" ITALIC="true"/>
+</node>
+</node>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_755894462" CREATED="1697912030153" MODIFIED="1697912305838" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The <i><u>break</u></i>&#160;and <i><u>continue</u></i>&#160;builtins may be used to control loop execution.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Hack" ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Conditional Constructs" ID="ID_1039053781" CREATED="1697911882946" MODIFIED="1697911882946">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_1654651059" CREATED="1697912194843" MODIFIED="1697912311141" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <i>if</i>&#160;test-commands; <i>then</i>
+    </p>
+    <p>
+      consequent-commands;
+    </p>
+    <p>
+      [<i>elif</i>&#160;more-test-commands; <i>then</i>
+    </p>
+    <p>
+      more-consequents;]
+    </p>
+    <p>
+      [else alternate-consequents;]
+    </p>
+    <p>
+      <i>fi</i>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Hack" ITALIC="true"/>
+</node>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_740958783" CREATED="1697912345702" MODIFIED="1697912387897" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <i>case</i>&#160;word <i>in</i>
+    </p>
+    <p>
+      [ [(] <i>pattern</i>&#160;[| <i>pattern</i>]...) <i>command-list</i>&#160;;;]...
+    </p>
+    <p>
+      <i>esac</i>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Hack" ITALIC="true"/>
+</node>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_1269004509" CREATED="1697912742775" MODIFIED="1697912759891" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <i>select</i>&#160;name [in words ...]; <i>do</i>&#160;commands; <i>done</i>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Hack" ITALIC="true"/>
+<node ID="ID_1567326448" CREATED="1697912832768" MODIFIED="1697913054298" COLOR="#ffffff" BACKGROUND_COLOR="#006666"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre>example that allows the user to pick a filename from the current 
+directory, and displays the name and index of the file selected.
+    <i>select fname in *;</i>    
+     <i>do</i>    
+      <i>echo you picked $fname \($REPLY\)</i>    
+      <i>break;</i>    
+    <i>done</i></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="(( expression ))" LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_672569558" CREATED="1697913085225" MODIFIED="1697913140591" STYLE="bubble">
+<font NAME="Hack" ITALIC="true"/>
+</node>
+<node TEXT="[[ expression ]]&#xa;Return a status of 0 or 1 depending on the evaluation of the conditional expression." LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_1042169879" CREATED="1697913102345" MODIFIED="1697913213796" STYLE="bubble">
+<font NAME="Hack" ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Grouping Commands" ID="ID_669701154" CREATED="1697911882948" MODIFIED="1697911882948">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_700985057" CREATED="1697913770133" MODIFIED="1697913970417" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ( list )
+    </p>
+    <p>
+      create a <i><b>subshell</b></i>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Hack" ITALIC="true"/>
+</node>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,6" ID="ID_1104370142" CREATED="1697913844533" MODIFIED="1697913972906" STYLE="bubble"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      { list; }
+    </p>
+    <p>
+      executed int the current <b><i>subshell context</i></b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Hack" ITALIC="true"/>
+</node>
+</node>
+</node>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" FOLDED="true" ID="ID_1978773649" CREATED="1696706610353" MODIFIED="1697911799426" HGAP_QUANTITY="154.2499958202244 pt" VSHIFT_QUANTITY="62.24999814480548 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -393,7 +591,7 @@
 </node>
 </node>
 </node>
-<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_736559694" CREATED="1696706610354" MODIFIED="1696847283600" HGAP_QUANTITY="92.74999765306717 pt" VSHIFT_QUANTITY="-175.4999947696926 pt"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_736559694" CREATED="1696706610354" MODIFIED="1697911809873" HGAP_QUANTITY="161.74999559670698 pt" VSHIFT_QUANTITY="17.249999485909946 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -411,7 +609,7 @@
 </html>
 </richcontent>
 </node>
-<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1106039496" CREATED="1696706610356" MODIFIED="1696880771326" HGAP_QUANTITY="62.74999854713684 pt" VSHIFT_QUANTITY="-15.74999953061343 pt"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,2" FOLDED="true" ID="ID_1106039496" CREATED="1696706610356" MODIFIED="1697911757026" HGAP_QUANTITY="162.49999557435527 pt" VSHIFT_QUANTITY="32.9999990165234 pt"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -428,26 +626,6 @@
   </body>
 </html>
 </richcontent>
-<node LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_1578508350" CREATED="1696708280753" MODIFIED="1696847889203" ICON_SIZE="16.0 pt" COLOR="#ffffff" BACKGROUND_COLOR="#000066" BORDER_COLOR="#336600"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <ul http-equiv="content-type" content="text/html; charset=utf-8">
-      <li>
-        <p>
-          Check whether the command contains slashes. If not, first check with the function list to see if it contains a command by the name we are looking for.
-        </p>
-      </li>
-    </ul>
-  </body>
-</html>
-</richcontent>
-<font NAME="Serif" SIZE="16"/>
-<edge STYLE="bezier" COLOR="#ff0000" DASH="SOLID"/>
-</node>
 <node LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_1931733041" CREATED="1696708280753" MODIFIED="1696847773291" COLOR="#ffffff" BACKGROUND_COLOR="#000066" HGAP_QUANTITY="43.2499991282821 pt" VSHIFT_QUANTITY="-2.2499999329447773 pt" BORDER_COLOR="#336600"><richcontent TYPE="NODE">
 
 <html>
@@ -485,6 +663,26 @@
 </html>
 </richcontent>
 <font NAME="Serif" SIZE="16"/>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_1578508350" CREATED="1696708280753" MODIFIED="1697642822319" ICON_SIZE="16.0 pt" COLOR="#ffffff" BACKGROUND_COLOR="#000066" BORDER_COLOR="#336600"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul http-equiv="content-type" content="text/html; charset=utf-8">
+      <li>
+        <p>
+          Check whether the command contains slashes. If not, first check with the function list to see if it contains a command by the name we are looking for.
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
+<font NAME="Serif" SIZE="16"/>
+<edge STYLE="bezier" DASH="SOLID"/>
+</node>
 </node>
 <node LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_631807040" CREATED="1696708280756" MODIFIED="1696847773291" COLOR="#ffffff" BACKGROUND_COLOR="#000066" HGAP_QUANTITY="45.49999906122687 pt" VSHIFT_QUANTITY="-5.999999821186071 pt" BORDER_COLOR="#336600"><richcontent TYPE="NODE">
 
@@ -598,7 +796,7 @@
 <arrowlink SHAPE="LINEAR_PATH" COLOR="#0033ff" WIDTH="2" TRANSPARENCY="200" DASH="3 3" FONT_SIZE="10" FONT_FAMILY="Noto Sans Arabic" DESTINATION="ID_1978773649" STARTINCLINATION="1298;0;" ENDINCLINATION="980;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <edge COLOR="#ff00ff"/>
 <font SIZE="20"/>
-<node LOCALIZED_STYLE_REF="styles.important" ID="ID_1489824252" CREATED="1696847130334" MODIFIED="1696850379423" HGAP_QUANTITY="-99.2499966248871 pt" VSHIFT_QUANTITY="-100.49999700486671 pt"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="styles.important" ID="ID_1489824252" CREATED="1696847130334" MODIFIED="1697642807219" VGAP_QUANTITY="1.9 pt" HGAP_QUANTITY="-99.2499966248871 pt" VSHIFT_QUANTITY="-100.49999700486671 pt" MAX_WIDTH="500.0 pt" MIN_WIDTH="5.0 cm"><richcontent TYPE="NODE">
 
 <html>
   <head>
