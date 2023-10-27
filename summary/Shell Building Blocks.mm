@@ -13,7 +13,7 @@
   </body>
 </html>
 </richcontent>
-<hook NAME="MapStyle" zoom="0.754">
+<hook NAME="MapStyle" zoom="0.351">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -175,7 +175,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Hack" ITALIC="true"/>
 </node>
@@ -202,7 +201,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Hack" ITALIC="true"/>
 </node>
@@ -219,7 +217,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Hack" ITALIC="true"/>
 </node>
@@ -252,7 +249,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Hack" ITALIC="true"/>
 </node>
@@ -274,7 +270,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Hack" ITALIC="true"/>
 </node>
@@ -290,7 +285,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Hack" ITALIC="true"/>
 <node ID="ID_1567326448" CREATED="1697912832768" MODIFIED="1697913054298" COLOR="#ffffff" BACKGROUND_COLOR="#006666"><richcontent TYPE="NODE">
@@ -309,7 +303,6 @@ directory, and displays the name and index of the file selected.
     <i>done</i></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -336,7 +329,6 @@ directory, and displays the name and index of the file selected.
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Hack" ITALIC="true"/>
 </node>
@@ -355,7 +347,6 @@ directory, and displays the name and index of the file selected.
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Hack" ITALIC="true"/>
 </node>
