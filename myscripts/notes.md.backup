@@ -1,0 +1,9 @@
+## remove this file after first run:
+`#!/bin/rm  # remove this file after first run`
+
+# https://tldp.org/LDP/abs/html/variables.html
+
+4.1. Variable Substitution:
+
+The name of a variable is a placeholder for its value, the data it holds. Referencing (retrieving) its value is called variable **substitution**
+

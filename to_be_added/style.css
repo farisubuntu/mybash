@@ -1,0 +1,36 @@
+*{
+  
+padding:unset;  
+ white-space: unset;
+ direction: ltr;
+ text-align: left; 
+  
+}
+body{
+  width:95vw;
+  border:1px solid blue;
+  
+}
+dt{
+  display: flex;
+  font-size: 1.5rem;
+  color: white;
+  background-color: blue;
+  padding-left:1rem;
+  
+}
+dl{
+  display: flex;
+  flex-direction: column;
+}
+
+div{
+  display: flex;  
+  flex-direction: column;
+}
+pre{
+  border:1px dashed green;
+  background-color: black;
+  color:gold;
+  padding:1rem;
+}
