@@ -3,9 +3,11 @@
 body {
 
  background-color: black;
- padding: 0.8rem;
+ padding: 10px;
  color: white;
  margin:0;
+ /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+ font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 
 
 }
@@ -53,12 +55,13 @@ h3.footnotes {
  background-color: rgb(86, 131, 131);
  color: white;
  font-size: 1.3rem;
-
+ /* width:fit-content; */
+ 
 }
 
 .NAVFOOTER hr,
 .NAVHEADER hr {
- display: none;
+ /* display: none; */
 }
 
 .NAVFOOTER *,
@@ -94,7 +97,7 @@ dt tt i {
 }
 
 table {
- width: auto;
+ width: 98%;
 }
 p a{
  color:lightblue;
