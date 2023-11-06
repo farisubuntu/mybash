@@ -11,6 +11,9 @@ body {
  padding: 0.2rem;
  color: white;
 }
+body > *{
+ flex:1;
+}
 
 .PROGRAMLISTING {
  background-color: black;
@@ -89,12 +92,13 @@ table {
  width: 100%;
 }
 
-@media screen and (width<500px) {
+@media screen and (width<600px) {
  table pre.PROGRAMLISTING {
   font-size: 18px;
  }
 
- body {
-
+ body,dd,div,pre,p,h1,h2,h3 {
+  margin:1px;
+  padding-left:2px;
  }
 }
