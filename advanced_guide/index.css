@@ -1,3 +1,100 @@
-*{
+* {
  box-sizing: border-box;
+ color: white;
+}
+
+body {
+ display: flex;
+ flex-direction: column;
+ font-size: calc(15px + 0.34vw);
+ background-color: black;
+ padding: 0.2rem;
+ color: white;
+}
+
+.PROGRAMLISTING {
+ background-color: black;
+ color: yellow;
+ padding: 0.5rem;
+
+}
+
+.VARIABLELIST dl dt {
+ color: blue;
+ font-size: 1.4rem;
+ padding-left: 0.2rem;
+
+}
+
+.SCREEN * {
+ color: green;
+ background-color: rgb(236, 228, 215);
+}
+
+td img {
+ width: 50px;
+}
+
+h3.footnotes {
+ background-color: #ffdddd;
+ border-left: 6px solid #f44336;
+ color: blue;
+ padding-left: 0.5rem;
+}
+
+.NAVFOOTER,
+.NAVHEADER {
+ background-color: rgb(86, 131, 131);
+ color: white;
+ padding: 0.2rem;
+}
+
+.NAVFOOTER hr,
+.NAVHEADER hr {
+ display: none;
+}
+
+.NAVFOOTER *,
+.NAVHEADER * {
+ color: white;
+}
+
+.TOKEN,
+.COMMAND {
+ color: green;
+ font-weight: bold;
+}
+
+p>table td {
+ padding: 0.2rem;
+}
+
+.varname {
+ color: #FFF49B;
+}
+
+/* .FIRSTTERM {} */
+
+span.QUOTE {
+ color: orange;
+}
+
+/* h1.sect1 {} */
+
+dt tt i {
+ color: #F7C0F0;
+}
+
+table {
+ width: 100%;
+}
+
+@media screen and (width<500px) {
+ table pre.PROGRAMLISTING {
+  font-size: 18px;
+ }
+
+ body {
+
+ }
 }
