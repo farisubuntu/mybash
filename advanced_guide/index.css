@@ -1,19 +1,22 @@
-* {
- box-sizing: border-box;
- color: white;
-}
+@import "https://www.w3schools.com/w3css/4/w3.css";
 
 body {
- display: flex;
- flex-direction: column;
- font-size: calc(15px + 0.34vw);
+
  background-color: black;
- padding: 0.2rem;
+ padding: 0.8rem;
  color: white;
+ margin:0;
+
+
 }
-body > *{
- flex:1;
+
+
+body > .CHAPTER, body >.SECT{
+
+
 }
+
+
 
 .PROGRAMLISTING {
  background-color: black;
@@ -22,10 +25,10 @@ body > *{
 
 }
 
-.VARIABLELIST dl dt {
- color: blue;
- font-size: 1.4rem;
+.VARIABLELIST dl dd {
+ color: rgb(93, 93, 250);
  padding-left: 0.2rem;
+ margin:0 4px;
 
 }
 
@@ -49,7 +52,8 @@ h3.footnotes {
 .NAVHEADER {
  background-color: rgb(86, 131, 131);
  color: white;
- padding: 0.2rem;
+ font-size: 1.3rem;
+
 }
 
 .NAVFOOTER hr,
@@ -61,6 +65,7 @@ h3.footnotes {
 .NAVHEADER * {
  color: white;
 }
+
 
 .TOKEN,
 .COMMAND {
@@ -89,16 +94,12 @@ dt tt i {
 }
 
 table {
- width: 100%;
+ width: auto;
 }
-
-@media screen and (width<600px) {
- table pre.PROGRAMLISTING {
-  font-size: 18px;
- }
-
- body,dd,div,pre,p,h1,h2,h3 {
-  margin:1px;
-  padding-left:2px;
- }
+p a{
+ color:lightblue;
 }
+p{
+ color:white;
+}
+@import "https://www.w3schools.com/w3css/4/w3pro.css" screen and (max-width: 550px);
