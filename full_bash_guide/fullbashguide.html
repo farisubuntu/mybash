@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="bash-guide---wiki">Bash Guide - wiki</h1>
+    <h2 id="content">Content</h2>
+    <ul>
+      <li>
+        <p>
+          <a href="#">Using <code>Bash</code></a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#CommandsAndArguments">Commands and Arguments</a>
+          - Types of commands; argument splitting; writing scripts.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#SpecialCharacters">Special Characters</a>
+          - Characters special to bash
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#Parameters">Parameters</a>
+          - Variables; special parameters; parameter types; parameter
+          expansion.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#Patterns">Patterns</a>
+          - Globs; filename matching; extended globs; brace expansion; regular
+          expressions.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#TestsAndConditionals">Tests and Conditionals</a>
+          - Exit status; &amp;&amp; and ||; if, test and [[; while, until and
+          for; case and select.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#Arrays">Arrays</a>
+          - Arrays; associative arrays.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#InputAndOutput">Input and Output</a>
+          - Redirection; here documents; here strings; pipes; process
+          substitution.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#CompoundCommands">Compound Commands</a>
+          - Subshells; command grouping; arithmetic evaluation; functions;
+          aliases.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#Sourcing">Sourcing</a>
+          - Reading commands from other files.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#JobControl">Job Control</a>
+          - Working with background jobs.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://mywiki.wooledge.org/FullBashGuide#Practices">Practices</a>
+          - Choosing your shell; quoting; readability; debugging.
+        </p>
+      </li>
+    </ul>
+    <h3 id="using-bash">Using Bash</h3>
+    <ul>
+      <li>
+        <strong>Note</strong> that if you’re looking for information on
+        <code>BASH built-ins</code> (commands provided by <code>BASH</code>,
+        not by external applications) you should look in
+        <code>man bash</code> instead. BASH’s manual is extensive and
+        detailed.
+      </li>
+      <li>
+        a shell prompt either ends with <code>$</code>,<code>%</code> or
+        <code>#</code>:
+        <ul>
+          <li>
+            If it ends with <code>$</code>, this indicates a shell that’s
+            compatible with the <code>Bourne shell</code> (such as a
+            <code>POSIX</code> shell, or a <code>Korn</code> shell, or
+            <code>Bash</code>).
+          </li>
+          <li>
+            If it ends with <code>%,</code> this indicates a
+            <code>C</code> shell (<code>csh</code> or <code>tcsh</code>);
+          </li>
+          <li>
+            If it ends with <code>#</code>, this indicates that the shell is
+            running as the system’s <strong>superuser</strong> account
+            (<code>root</code>), and that you should be extra careful.
+          </li>
+        </ul>
+      </li>
+      <li><code>man [topic]</code> # ‘topic’ is name of the page to read</li>
+      <li>
+        <code>help</code> command which contains brief summaries of its
+        <em>built-in</em> commands
+      </li>
+    </ul>
+    <hr />
+    <h3 id="commands-and-arguments">Commands and Arguments</h3>
+    <ul>
+      <li>
+        Bash divides each line into <em>words</em> that are demarcated by a
+        whitespace character (spaces and tabs). The first word of the line is
+        the name of the command to be executed. All the remaining words become
+        <em>arguments</em> to that command (options, filenames, etc.).
+      </li>
+      <li>
+        <em>Quotes</em> group everything inside them into a single argument.
+      </li>
+    </ul>
+    <p><strong>Review:</strong></p>
+    <ul>
+      <li>
+        <p>
+          <em>Arguments</em>: These are additional words specified after the
+          command (‘ls&nbsp;-l&nbsp;foo’ executes ls with two arguments).
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Quotes</em>: The two forms of quotes, single and double (’ and
+          “), are used to group words and can protect special characters. The
+          difference between ’ and” will be discussed later.
+        </p>
+      </li>
+    </ul>
+    <p><strong>Additionally:</strong></p>
+    <ul>
+      <li>
+        <p>
+          Tip — <em>Always</em> quote sentences or strings that belong
+          together, even if it’s not absolutely necessary. This developed
+          practice will reduce the risk of human error in the scripts.
+          (e.g.&nbsp;quoting a sentence of an echo command).
+        </p>
+      </li>
+      <li>
+        <p>
+          FAQ — I’m trying to put a command in a variable, but the complex
+          cases always fail!
+          <a href="https://mywiki.wooledge.org/BashFAQ/050">BashFAQ/050</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          FAQ — How can I handle command line arguments (options) to my script
+          easily?
+          <a href="https://mywiki.wooledge.org/BashFAQ/035">BashFAQ/035</a>.
+        </p>
+      </li>
+    </ul>
+    <h4 id="string">1. <code>String</code></h4>
+    <ul>
+      <li>
+        In Bash programming, almost everything is a <code>string</code>.
+      </li>
+      <li>
+        A string which is part of a larger string is called a
+        <em>substring</em>.
+      </li>
+    </ul>
+    <h4 id="types-of-commands">2. Types of commands</h4>
+    <ul>
+      <li>
+        <p>
+          <strong>Bash</strong> understands Several different types of
+          commands: <strong>aliases, functions, builtins, keywords</strong>,
+          and <strong>executables</strong>:
+        </p>
+        <ul>
+          <li>
+            2.1 <code>Alias</code> ==&gt; An alias is a word that is mapped to
+            a certain string. they only used in
+            <em>interactive shells</em> and not in <em>scripts</em>
+          </li>
+          <li>
+            <code>alias nmapp="nmap -Pn -A --osscan-limit"</code> (now you
+            can: <code>$ nmapp 192.168.0.1</code>)
+          </li>
+          <li>
+            2.2 <code>Function</code> ==&gt; A function contains shell
+            commands, and acts very much like a small script; they can even
+            take <em>arguments</em> and create <em>local</em> variables.
+          </li>
+          <li>2.3 <code>Builtins</code> such as <code>cd</code></li>
+          <li>
+            2.4 <code>keywords</code> ==&gt; Keywords are like builtins, with
+            the main difference being that keywords are actually
+            <code>Bash</code> syntax and may be parsed using
+            <em>special rules</em>. (<code>[</code> is Bash
+            <em>builtin</em> while <code>[[</code> is a Bash <em>keyword</em>)
+          </li>
+          <li>
+            2.5 <code>Executables</code> ==&gt; also be called
+            <em>external commands</em> or <em>applications</em>. Commonly
+            invoked by typing only their name. (thanks to
+            <code>PATH</code> variable)
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p><strong>Review:</strong></p>
+    <ul>
+      <li>
+        <p>
+          <em>Alias</em> — A word that is mapped to a string. Whenever that
+          word is used as a command, it is replaced by the string it has
+          mapped.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Function</em> — A name that is mapped to a set of commands.
+          Whenever the function is used as a command, it is called with the
+          arguments following it. Functions are the basic method of making new
+          commands.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Builtin</em> — A command that has been built into Bash. Builtins
+          are handled directly by the Bash executable and do not create new
+          processes.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Keyword</em> — A command that is actually part of Bash’s syntax.
+          Bash may parse keywords differently from regular commands.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Executable</em> — A program that can be executed by referring to
+          its file path (e.g.&nbsp;/bin/ls), or simply by its name if its
+          location is in the PATH variable.
+        </p>
+      </li>
+    </ul>
+    <p><strong>Additionally:</strong></p>
+    <ul>
+      <li>
+        <p>
+          Manual —
+          <a href="http://www.gnu.org/software/bash/manual/bashref.html#Simple-Commands">Simple Commands</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          FAQ — What is the difference between test, [ and [[?
+          <a href="https://mywiki.wooledge.org/BashFAQ/031">BashFAQ/031</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          FAQ — How can I make an alias that takes an argument?
+          <a href="https://mywiki.wooledge.org/BashFAQ/080">BashFAQ/080</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Tip — The type command can be used to get a description of the
+          command type:
+        </p>
+      </li>
+    </ul>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a> $ <span class="bu">type</span> rm</span>
+  <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a> <span class="fu">rm</span> is hashed (/bin/rm)</span>
+  <span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a> $ <span class="bu">type</span> cd</span>
+  <span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a> <span class="bu">cd</span> is a shell builtin</span></code></pre>
+    </div>
+    <p>
+      <strong>references:</strong> -
+      <a
+        href="https://mywiki.wooledge.org/BashGuide">https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/</a>
+      -
+      <a href="https://mywiki.wooledge.org/BashGuide">https://mywiki.wooledge.org/BashGuide</a>
+    </p>
+    <p>
+      <strong>tools:</strong> - Practice and excersices
+      <a href="https://exercism.org/">https://exercism.org/</a>
+    </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

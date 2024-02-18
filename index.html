@@ -2,56 +2,78 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
- <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="index.css">
 
- <title>Bash Notes/Guides</title>
+  <title>Bash Notes/Guides</title>
 </head>
 
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="card" onclick="cardClicked(this);">
+        <div class="card-body">
+          <a href="beginner_guide/html/index.html">
+            <h1 class="title">Bash Beginer Guide</h1>
+          </a>
+        </div>
+        <div class="img-wrapper">
+          <img src="tldp.png" />
+        </div>
+      </div>
 
- <div class="container">
-  <div class="card-column column-0">
-   <div class="card card-color-0" onclick="cardClicked(this);">
-    <div class="border"><a id="link-0" href="beginner_guide/html/index.html"></a></div>
-    <img src="tldp.png" />
-    <h1>TLDP - Bash Beginner Guide</h1>
-   </div>
-   <div class="card card-color-3" onclick="cardClicked(this);">
-    <div class="border"><a id="link-0" href="advanced_guide/index.html"></a></div>
-    <img src="tldp.png" />
-    <h1>TLDP - Advanced Bash Guide</h1>
-   </div>
-   <div class="card card-color-2">
-    <div class="border"></div>
-    <img src="bash_videos.png" />
-    <h1>Bash Videos</h1>
-   </div>
-  </div>
-  <div class="card-column column-1">
-   <div class="card card-color-1" onclick="cardClicked(this);">
-    <div class="border"><a href="bash_resources/bash_resources.html"></a></div>
-    <img src="Bash_Logo.png" />
-    <h1>Bash Learning Resources</h1>
-   </div>
-   <div class="card card-color-3">
-    <div class="border"></div>
-    <img src="bash_pdfs.png" />
-    <h1>Bash PDFs</h1>
-   </div>
-   <div class="card card-color-4" onclick="cardClicked(this);">
-    <div class="border"><a id="link-4" href="https://www.baeldung.com/linux/linux-scripting-series"></a></div>
-    <img src="logo.svg" />
-    <h1>Baeldung</h1>
-   </div>
-  </div>
- </div>
+      <div class="card" onclick="cardClicked(this);">
+        <div class="card-body">
+          <a href="advanced_guide/index.html">
+            <h1 class="title">Advanced Bash Guide</h1>
+          </a>
+        </div>
+        <div class="img-wrapper"><img src="tldp.png" /></div>
+      </div>
 
- <script src="myscript.js"></script>
+      <div class="card" onclick="cardClicked(this);">
+        <div class="card-body">
+          <a href="full_bash_guide/fullbashguide.html">
+            <h1 class="title">Full Bash Guide - Wiki</h1>
+          </a>
+        </div>
+        <div class="img-wrapper">
+          <img src="full_bash_guide/full_bash_guide.png" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+  
+
+      <div class="card" onclick="cardClicked(this);">
+        <div class="card-body">
+          <a href="https://www.baeldung.com/linux/linux-scripting-series">
+            <h1 class="title">Baeldung</h1>
+          </a>
+        </div>
+        <div class="img-wrapper"><img src="baeldung.jpeg" target="_blank" /></div>
+      </div>
+      <div class="card" onclick="cardClicked(this);">
+        <div class="card-body">
+          <a href="https://exercism.org/tracks/bash">
+            <h1 class="title">Practice Bash - Exercism.org</h1>
+          </a>
+        </div>
+        <div class="img-wrapper"><img src="exercism.png" /></div>
+      </div>
+        <div class="card" onclick="cardClicked(this);">
+          <div class="card-body">
+            <a href="#">
+              <h1 class="title"><em>comming soon ....</em></h1>
+            </a>
+          </div>
+          <div class="img-wrapper"><img src="comming_soon.jpeg" /></div>
+        </div>
+    </div>
+  </div>
+  <script src="myscript.js"></script>
 
 </body>
 
